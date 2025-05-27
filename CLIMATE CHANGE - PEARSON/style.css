@@ -21,9 +21,9 @@
 
 body {
     background-image: linear-gradient(
-            rgba(0, 0, 0, 0.868),
-            rgba(0, 0, 0, 0.84),
-            rgba(0, 0, 0, 0.871)
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.64),
+            rgba(0, 0, 0, 0.61)
         ),
         url(/img/hugh-whyte-J8bU6-tAGy8-unsplash.jpg);
     background-size: cover;
