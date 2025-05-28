@@ -435,7 +435,7 @@
                 font-size: 1.3em;
             }
         }
-/* New styles for "Your Impact" section */
+        /* New styles for "Your Impact" section */
         .impact-section {
             padding: 60px 20px;
         }
@@ -457,11 +457,9 @@
         }
 
         .action-categories-grid {
-           display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
         }
 
         .action-category-block {
@@ -554,11 +552,10 @@
         }
 
         .testimonials-grid {
-           display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 50px;
         }
 
         .testimonial-card {
