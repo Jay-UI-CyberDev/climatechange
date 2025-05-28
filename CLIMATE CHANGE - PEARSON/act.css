@@ -144,296 +144,145 @@
             font-weight: 600;
         }
 
-        /* Hero Section */
-        .hero-section {
-            text-align: center;
-            padding: 100px 20px;
-            color: var(--text-color-light);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: calc(100vh - 100px); /* Adjust for header height */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x600?text=Diverse+Ghanaian+Teens+Climate+Action'); /* Placeholder, replace with actual image */
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .hero-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-headline {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            color: var(--color-yellow);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-
-        .hero-subheadline {
-            font-size: 1.4em;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            color: var(--color-white);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-button {
-            background-color: var(--color-dark-green);
-            color: var(--color-white);
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.4s ease-in, color 0.4s ease-in;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background-color: var(--color-yellow);
-            color: var(--color-dark-green);
-        }
-
-        /* Section 2: Why NOW? */
-        .why-now-section {
-            padding: 80px 20px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Slightly darker overlay for content */
-            color: var(--text-color-light);
-        }
-
-        .why-now-headline {
-            font-size: 2.8em;
-            margin-bottom: 40px;
-            color: var(--color-yellow);
-        }
-
-        .why-now-intro {
-            font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto 60px auto;
-            color: var(--color-white);
-        }
-
-        .content-blocks-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
+       /* Main Content Styling */
+        .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
 
-        .content-block {
-            background-color: rgba(255, 255, 255, 0.08);
+        .section-card {
+            background: var(--section-bg);
             border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 40px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: var(--text-color-primary);
+            animation: fadeInUp 0.6s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: var(--text-color-secondary);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            animation: fadeInUp 0.6s ease-in-out 0.1s;
+        }
+
+        .hero-section .accent-text {
+            font-weight: bold;
+            color: var(--accent-color); /* Using the defined accent color */
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 40px;
+            animation: fadeInUp 0.6s ease-in-out 0.2s;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-color); /* Using the defined accent color */
+            color: var(--color-white);
+            font-weight: bold;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 128, 128, 0.3); /* Adjusted shadow to match accent */
+            animation: fadeInUp 0.6s ease-in-out 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-yellow); /* Hover color for primary button */
+            transform: translateY(-3px);
+        }
+
+        .urgency-stats-section {
+            padding: 60px 20px;
+        }
+
+        .urgency-stats-section h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--text-color-primary);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .urgency-stats-section > p { /* Targeting the intro paragraph */
+            font-size: 1.1rem;
+            color: var(--text-color-secondary);
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 50px auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .stat-block {
+            background: var(--section-bg);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
             padding: 30px;
-            text-align: left;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
 
-        .content-block:hover {
-            transform: translateY(-10px);
-            background-color: rgba(255, 255, 255, 0.15);
+        .stat-block:hover {
+            transform: translateY(-5px);
         }
 
-        .content-block .icon {
-            font-size: 3.5em;
-            color: var(--color-yellow);
+        .stat-block svg {
+            width: 60px;
+            height: 60px;
+            color: var(--accent-color); /* Using the defined accent color */
             margin-bottom: 20px;
         }
 
-        .content-block-headline {
-            font-size: 1.8em;
-            color: var(--color-white);
+        .stat-block h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color-primary);
             margin-bottom: 15px;
         }
 
-        .content-block-text {
-            font-size: 1.05em;
-            line-height: 1.5;
-            color: var(--color-white);
-            margin-bottom: 20px;
-            flex-grow: 1; /* Allows text to take available space */
+        .stat-block p {
+            font-size: 1rem;
+            color: var(--text-color-secondary);
+            margin-bottom: 15px;
         }
 
-        .content-block-stat {
-            font-size: 0.95em;
-            font-weight: 600;
-            color: var(--color-yellow);
-            align-self: flex-end; /* Pushes stat to the bottom right */
+        .stat-block .small-stat {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--accent-color); /* Using the defined accent color */
         }
 
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            ul {
-                padding: 15px 50px;
-                gap: 30px;
-            }
-
-            .hero-headline {
-                font-size: 3em;
-            }
-
-            .hero-subheadline {
-                font-size: 1.2em;
-            }
-
-            .why-now-headline {
-                font-size: 2.2em;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                height: auto;
-                padding: 10px 0;
-            }
-
-            .nav-wrapper {
-                width: 100%;
-                margin-top: 15px;
-            }
-
-            ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 10px 20px;
-                gap: 15px;
-                border-radius: 15px;
-            }
-
-            .nav-link {
-                font-size: 14px;
-                padding: 6px 12px;
-            }
-
-            .logo {
-                padding: 10px;
-            }
-
-            .getstarted {
-                padding: 10px;
-            }
-
-            .getstarted button {
-                height: 40px;
-                width: 120px;
-                font-size: 0.8em;
-            }
-
-            .hero-section {
-                padding: 80px 15px;
-                min-height: 80vh;
-            }
-
-            .hero-headline {
-                font-size: 2.5em;
-            }
-
-            .hero-subheadline {
-                font-size: 1em;
-            }
-
-            .cta-button {
-                padding: 12px 25px;
-                font-size: 1em;
-            }
-
-            .why-now-section {
-                padding: 60px 15px;
-            }
-
-            .why-now-headline {
-                font-size: 1.8em;
-                margin-bottom: 30px;
-            }
-
-            .why-now-intro {
-                font-size: 1em;
-                margin-bottom: 40px;
-            }
-
-            .content-blocks-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .content-block {
-                padding: 25px;
-            }
-
-            .content-block .icon {
-                font-size: 3em;
-            }
-
-            .content-block-headline {
-                font-size: 1.5em;
-            }
-
-            .content-block-text {
-                font-size: 0.95em;
-            }
-
-            .content-block-stat {
-                font-size: 0.9em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .logo a {
-                font-size: 1.5rem;
-            }
-
-            .hero-headline {
-                font-size: 2em;
-            }
-
-            .hero-subheadline {
-                font-size: 0.9em;
-            }
-
-            .cta-button {
-                padding: 10px 20px;
-                font-size: 0.9em;
-            }
-
-            .why-now-headline {
-                font-size: 1.5em;
-            }
-
-            .content-block .icon {
-                font-size: 2.5em;
-            }
-
-            .content-block-headline {
-                font-size: 1.3em;
-            }
+        .stat-block .small-stat span {
+            font-size: 1.5rem;
         }
 
         /* New styles for "Your Impact" section */
@@ -464,6 +313,7 @@
         }
 
         .action-category-block {
+            /* Applied styles from .stat-block */
             background: var(--section-bg);
             border-radius: 15px;
             box-shadow: var(--shadow-light);
@@ -560,14 +410,22 @@
         }
 
         .testimonial-card {
-            background: var(--nav-bg); /* Lighter background for testimonials */
-            backdrop-filter: blur(5px);
-            border-radius: 10px;
-            padding: 25px;
-            text-align: left;
-            border: 1px solid var(--nav-border);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Applied styles from .stat-block */
+            background: var(--section-bg);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            padding: 25px; /* Keep original padding for content fit */
+            text-align: left; /* Keep original text alignment */
+            transition: transform 0.3s ease;
+            /* Removed original conflicting styles */
+            /* backdrop-filter: blur(5px); */
+            /* border: 1px solid var(--nav-border); */
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
             color: var(--text-color-primary);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
         }
 
         .testimonial-card p {
@@ -639,3 +497,4 @@
         .community-cta .newsletter-form button:hover {
             background-color: var(--color-dark-green);
         }
+
